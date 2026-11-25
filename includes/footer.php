@@ -6,7 +6,7 @@
           <img src="<?= BASE_PATH ?>/assets/img/LogoStudioVersoOficial.jpeg" alt="Studio Verso">
           Studio <span>Verso</span>
         </a>
-        <p style="color:var(--tinta-suave);font-size:.88rem;margin-top:10px;">contato@studioverso.com.br</p>
+        <p style="color:var(--tinta-suave);font-size:.88rem;margin-top:10px;">studioversooficial@gmail.com</p>
       </div>
       <div>
         <h4>Loja</h4>
@@ -27,7 +27,7 @@
       <div>
         <h4>Redes sociais</h4>
         <ul>
-          <li><a href="#">Instagram</a></li>
+          <li><a href="https://www.instagram.com/_studio_verso_/?hl=pt">Instagram</a></li>
           <li><a href="#">Pinterest</a></li>
           <li><a href="#">WhatsApp</a></li>
         </ul>
