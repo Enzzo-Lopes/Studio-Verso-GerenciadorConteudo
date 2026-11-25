@@ -17,9 +17,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $erro = 'Já existe uma conta com esse e-mail.';
         } else {
             $hash = password_hash($senha, PASSWORD_DEFAULT);
-            $stmt = $conn->prepare('INSERT INTO usuarios (nome, email, senha_hash) VALUES (?, ?, ?)');
-            $stmt->bind_param('sss', $nome, $email, $hash);
-            $stmt->execute();
+
+// Busca o próximo ID na sequência do TiDB
+$resultadoId = $conn->query(
+    'SELECT NEXTVAL(usuarios_id_seq) AS novo_id'
+);
+
+$novoId = (int) $resultadoId->fetch_assoc()['novo_id'];
+
+// Insere o usuário com o ID gerado
+$stmt = $conn->prepare(
+    'INSERT INTO usuarios (id, nome, email, senha_hash)
+     VALUES (?, ?, ?, ?)'
+);
+
+$stmt->bind_param('isss', $novoId, $nome, $email, $hash);
+$stmt->execute();
 
             session_regenerate_id(true);
             $_SESSION['usuario'] = ['id' => $conn->insert_id, 'nome' => $nome, 'email' => $email, 'is_admin' => 0];
