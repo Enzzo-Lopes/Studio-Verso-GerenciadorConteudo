@@ -9,6 +9,6 @@ COPY . /app
 
 COPY Caddyfile /etc/frankenphp/Caddyfile
 
-ENV SERVER_NAME=:8080
+ENV SERVER_NAME=:80
 
-EXPOSE 8080
+EXPOSE 80
