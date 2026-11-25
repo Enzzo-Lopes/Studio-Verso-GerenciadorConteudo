@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#FFF8EE">
+<link rel="manifest" href="/manifest.webmanifest">
 <title><?= isset($tituloPagina) ? e($tituloPagina) . ' — Studio Verso' : 'Studio Verso — Artesanato Personalizado' ?></title>
 <meta name="description" content="Sketchbooks personalizados, amigurumis e desenhos por encomenda, feitos à mão pelo Studio Verso.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
