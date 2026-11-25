@@ -1,5 +1,5 @@
 
-:8080 {
+:80 {
     root * /app
     php_server
     encode zstd gzip
