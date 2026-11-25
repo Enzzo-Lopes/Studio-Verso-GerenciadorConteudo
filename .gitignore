@@ -1,0 +1,9 @@
+# Credenciais
+segredos.php
+studioverso_segredos.php
+.env
+.env.*
+
+# Arquivos temporários
+*.log
+.DS_Store
