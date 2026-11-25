@@ -3,7 +3,7 @@
     <div class="footer-grade">
       <div>
         <a href="<?= BASE_PATH ?>/index.php" class="logo">
-          <img src="<?= BASE_PATH ?>/assets/img/logo-studio-verso.jpeg" alt="Studio Verso">
+          <img src="<?= BASE_PATH ?>/assets/img/LogoStudioVersoOficial.jpeg" alt="Studio Verso">
           Studio <span>Verso</span>
         </a>
         <p style="color:var(--tinta-suave);font-size:.88rem;margin-top:10px;">contato@studioverso.com.br</p>
